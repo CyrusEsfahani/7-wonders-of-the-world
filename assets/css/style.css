@@ -1,0 +1,99 @@
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  background: #eee;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+h2 {
+  font-size: 24px;
+  color: black;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+ 
+
+@media (max-width: 1200px) {
+    .swiper-slide img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .swiper-slide img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .swiper-slide img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .swiper-slide img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  .choice {
+    background-color: #f9fafb; /* Default light gray background */
+}
+.choice:hover {
+    background-color: #e2e8f0; /* Light gray on hover */
+    cursor: pointer;
+}
+.choice.selected {
+    background-color: #4ade80; /* Green color when selected */
+    color: white;
+}
+
+input:checked:has(> label) {
+  color: red;
+  background-color: green;
+}
+
+label:has(> input:checked) {
+  color: red;
+  background-color: green;
+}
+
+input:checked + span {
+  color: red;
+  background-color: black;
+}
